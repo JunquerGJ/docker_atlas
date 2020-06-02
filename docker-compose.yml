@@ -15,7 +15,7 @@ services:
       - dbRootUser
     volumes:
       - type: bind
-        source: ./b.sh 
+        source: ./initializeDB.sh 
         target: /docker-entrypoint-initdb.d/00.sh
       - type: volume
         source: dbData 
