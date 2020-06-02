@@ -1,0 +1,6 @@
+[submodule "docker_atlasbackend"]
+	path = docker_atlasbackend
+	url = https://github.com/JunquerGJ/docker_atlasbackend
+[submodule "docker_atlasfrontend"]
+	path = docker_atlasfrontend
+	url = https://github.com/JunquerGJ/docker_atlasfrontend
