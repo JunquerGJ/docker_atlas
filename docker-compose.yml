@@ -50,10 +50,10 @@ services:
      - "8080:80"
     volumes:
      - type: bind
-       source: ./Frontend/dist/atlas-frontend
+       source: ./docker_atlasfrontend/dist/atlas-frontend
        target: /usr/share/nginx/html
      - type: bind
-       source: ./Frontend/nginx.conf
+       source: ./docker_atlasfrontend/nginx.conf
        target: /etc/nginx/conf.d/default.conf
 secrets:
   dbRootUser:
