@@ -47,7 +47,10 @@ services:
     environment:
       PORT: /run/secrets/PORT
     ports:
-     - "8080:80"
+     - "443:443"
+    secrets:
+     - NGINX_CRYPTOCERT
+     - NGINX_CRYPTOKEY
     volumes:
      - type: bind
        source: ./docker_atlasfrontend/dist/atlas-frontend
@@ -95,5 +98,11 @@ secrets:
   TOKEN_DURATION:
     external:
      name: TOKEN_DURATION
+  NGINX_CRYPTOCERT:
+    external:
+     name: NGINX_CRYPTOCERT
+  NGINX_CRYPTOKEY:
+    external:
+     name: NGINX_CRYPTOKEY
 volumes:
  dbData:
