@@ -1,9 +1,9 @@
 version: "3.2"
 services:
   db:
-    image: postgres
+    image: postgres:12
     ports:
-      - "5430:5432"
+      - "5432:5432"
     environment: 
       POSTGRES_PASSWORD_FILE : /run/secrets/dbRootPass
       POSTGRES_USER_FILE : /run/secrets/dbRootUser
